@@ -20,18 +20,18 @@
     var CONFIG = {"hostname":"donganqi.cn","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="123456789101112131415161718192021222324library(&quot;meta&quot;)        # 载入meta包mydataframe = read.table(&quot;/Users/donganqi/Downloads/meta 分析尝试/try meta.csv&quot;, header = TRUE, sep = &quot;,&quot;)        # 读取 CSV 文件">
+  <meta name="description" content="12345678910111213141516171819202122232425library(&quot;meta&quot;)        # 载入meta包mydataframe = read.table(&quot;/Users/donganqi/Downloads/meta 分析尝试/try meta.csv&quot;, header = TRUE, sep = &quot;,&quot;)&amp;lt;!-- more --&amp;gt;">
 <meta name="keywords" content="LearningMetaAnalysis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Meta-analysis with R language">
 <meta property="og:url" content="http://donganqi.cn/2018/09/23/meta-analysis-with-r-language/index.html">
 <meta property="og:site_name" content="Dong Anqi">
-<meta property="og:description" content="123456789101112131415161718192021222324library(&quot;meta&quot;)        # 载入meta包mydataframe = read.table(&quot;/Users/donganqi/Downloads/meta 分析尝试/try meta.csv&quot;, header = TRUE, sep = &quot;,&quot;)        # 读取 CSV 文件">
+<meta property="og:description" content="12345678910111213141516171819202122232425library(&quot;meta&quot;)        # 载入meta包mydataframe = read.table(&quot;/Users/donganqi/Downloads/meta 分析尝试/try meta.csv&quot;, header = TRUE, sep = &quot;,&quot;)&amp;lt;!-- more --&amp;gt;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-03-23T04:05:09.704Z">
+<meta property="og:updated_time" content="2020-03-23T04:53:40.013Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Meta-analysis with R language">
-<meta name="twitter:description" content="123456789101112131415161718192021222324library(&quot;meta&quot;)        # 载入meta包mydataframe = read.table(&quot;/Users/donganqi/Downloads/meta 分析尝试/try meta.csv&quot;, header = TRUE, sep = &quot;,&quot;)        # 读取 CSV 文件">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425library(&quot;meta&quot;)        # 载入meta包mydataframe = read.table(&quot;/Users/donganqi/Downloads/meta 分析尝试/try meta.csv&quot;, header = TRUE, sep = &quot;,&quot;)&amp;lt;!-- more --&amp;gt;">
 
 <link rel="canonical" href="http://donganqi.cn/2018/09/23/meta-analysis-with-r-language/">
 
@@ -192,7 +192,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 12:05:09" itemprop="dateModified" datetime="2020-03-23T12:05:09+08:00">2020-03-23</time>
+                <time title="修改时间：2020-03-23 12:53:40" itemprop="dateModified" datetime="2020-03-23T12:53:40+08:00">2020-03-23</time>
               </span>
 
           
@@ -206,8 +206,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <a id="more"></a>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(<span class="string">"meta"</span>)</span><br><span class="line">        <span class="comment"># 载入meta包</span></span><br><span class="line"></span><br><span class="line">mydataframe = read.table(<span class="string">"/Users/donganqi/Downloads/meta 分析尝试/try meta.csv"</span>, header = <span class="literal">TRUE</span>, sep = <span class="string">","</span>)</span><br><span class="line">        <span class="comment"># 读取 CSV 文件</span></span><br><span class="line">        <span class="comment"># 读取 Excel 文件需要安装 Java 库，故不推荐，录数据可用 Excel，最后导出 CSV 即可</span></span><br><span class="line">        <span class="comment"># 绝对路径，Mac 用 Option + Command + C 可获取</span></span><br><span class="line">        <span class="comment"># header = TRUE 表示第一行为变量名</span></span><br><span class="line">        <span class="comment"># sep 用于确定分隔符，若缺省则为空格</span></span><br><span class="line"></span><br><span class="line">metabin(event.e, n.e, event.c, n.c, data = mydataframe, studlab = paste(Author), comb.fixed = <span class="literal">FALSE</span>, sm = <span class="string">"RR"</span>)</span><br><span class="line">        <span class="comment"># 二分类变量资料用 metabin</span></span><br><span class="line">        <span class="comment"># event.e 实验组事件数，n.e 实验组总数，event.c 对照组事件数，n.c 对照组总数，e = experimental group，c = controlled group</span></span><br><span class="line">        <span class="comment"># studlab 指定标签名</span></span><br><span class="line">        <span class="comment"># comb.fixed = FALSE 非固定效应模型，即随机效应模型</span></span><br><span class="line">        <span class="comment"># sm - A character string indicating which summary measure ("RR", "OR", "RD", or "ASD") is to be used for pooling of studies, see Details.</span></span><br><span class="line"></span><br><span class="line">metacont(n.e, mean.e, sd.e, n.c, mean.c, sd.c, data = mydataframe, studlab = paste(Author), comb.random = <span class="literal">FALSE</span>, sm = <span class="string">"SMD"</span>)</span><br><span class="line">        <span class="comment"># 连续型变量资料用 metacont</span></span><br><span class="line">        <span class="comment"># sm - "MD", "SMD", or "ROM"</span></span><br><span class="line"></span><br><span class="line">metaresult &lt;- metabin()</span><br><span class="line">forest(metaresult)</span><br><span class="line">        <span class="comment"># 将 metabin() 的结果负值给 metaresult, 用 forest() 绘出森林图</span></span><br></pre></td></tr></table></figure>
+        <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">library</span>(<span class="string">"meta"</span>)</span><br><span class="line">        <span class="comment"># 载入meta包</span></span><br><span class="line"></span><br><span class="line">mydataframe = read.table(<span class="string">"/Users/donganqi/Downloads/meta 分析尝试/try meta.csv"</span>, header = <span class="literal">TRUE</span>, sep = <span class="string">","</span>)</span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">        <span class="comment"># 读取 CSV 文件</span></span><br><span class="line">        <span class="comment"># 读取 Excel 文件需要安装 Java 库，故不推荐，录数据可用 Excel，最后导出 CSV 即可</span></span><br><span class="line">        <span class="comment"># 绝对路径，Mac 用 Option + Command + C 可获取</span></span><br><span class="line">        <span class="comment"># header = TRUE 表示第一行为变量名</span></span><br><span class="line">        <span class="comment"># sep 用于确定分隔符，若缺省则为空格</span></span><br><span class="line"></span><br><span class="line">metabin(event.e, n.e, event.c, n.c, data = mydataframe, studlab = paste(Author), comb.fixed = <span class="literal">FALSE</span>, sm = <span class="string">"RR"</span>)</span><br><span class="line">        <span class="comment"># 二分类变量资料用 metabin</span></span><br><span class="line">        <span class="comment"># event.e 实验组事件数，n.e 实验组总数，event.c 对照组事件数，n.c 对照组总数，e = experimental group，c = controlled group</span></span><br><span class="line">        <span class="comment"># studlab 指定标签名</span></span><br><span class="line">        <span class="comment"># comb.fixed = FALSE 非固定效应模型，即随机效应模型</span></span><br><span class="line">        <span class="comment"># sm - A character string indicating which summary measure ("RR", "OR", "RD", or "ASD") is to be used for pooling of studies, see Details.</span></span><br><span class="line"></span><br><span class="line">metacont(n.e, mean.e, sd.e, n.c, mean.c, sd.c, data = mydataframe, studlab = paste(Author), comb.random = <span class="literal">FALSE</span>, sm = <span class="string">"SMD"</span>)</span><br><span class="line">        <span class="comment"># 连续型变量资料用 metacont</span></span><br><span class="line">        <span class="comment"># sm - "MD", "SMD", or "ROM"</span></span><br><span class="line"></span><br><span class="line">metaresult &lt;- metabin()</span><br><span class="line">forest(metaresult)</span><br><span class="line">        <span class="comment"># 将 metabin() 的结果负值给 metaresult, 用 forest() 绘出森林图</span></span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -305,14 +304,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
