@@ -20,18 +20,18 @@
     var CONFIG = {"hostname":"donganqi.cn","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Meta-analysis 入门 meta 分析的学习分两部分：一部分是 meta 分析原理的学习，需要有本科阶段的统计学知识作为基础；另一部分是软件的学习，主流的有 stata 和 R 语言，工具各有利弊无需纠结。stata 是收费软件，但是很容易下载到破解版；R 语言是免费的，我用的IDE 是 RStudio，也是免费的。 meta 分析原理：《应用STATA做Meta分析(第2版)》，如果你">
+  <meta name="description" content="meta 分析的学习分两部分：一部分是 meta 分析原理的学习，需要有本科阶段的统计学知识作为基础；另一部分是软件的学习，主流的有 stata 和 R 语言，工具各有利弊无需纠结。stata 是收费软件，但是很容易下载到破解版；R 语言是免费的，我用的IDE 是 RStudio，也是免费的。 meta 分析原理：《应用STATA做Meta分析(第2版)》，如果你选择 stata 的话用这本书就">
 <meta name="keywords" content="LearningMetaAnalysis">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Meta-analysis Tutorial">
+<meta property="og:title" content="Meta-analysis 入门">
 <meta property="og:url" content="http://donganqi.cn/2018/09/28/meta-analysis-tutorial/index.html">
 <meta property="og:site_name" content="Dong Anqi">
-<meta property="og:description" content="Meta-analysis 入门 meta 分析的学习分两部分：一部分是 meta 分析原理的学习，需要有本科阶段的统计学知识作为基础；另一部分是软件的学习，主流的有 stata 和 R 语言，工具各有利弊无需纠结。stata 是收费软件，但是很容易下载到破解版；R 语言是免费的，我用的IDE 是 RStudio，也是免费的。 meta 分析原理：《应用STATA做Meta分析(第2版)》，如果你">
+<meta property="og:description" content="meta 分析的学习分两部分：一部分是 meta 分析原理的学习，需要有本科阶段的统计学知识作为基础；另一部分是软件的学习，主流的有 stata 和 R 语言，工具各有利弊无需纠结。stata 是收费软件，但是很容易下载到破解版；R 语言是免费的，我用的IDE 是 RStudio，也是免费的。 meta 分析原理：《应用STATA做Meta分析(第2版)》，如果你选择 stata 的话用这本书就">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-30T11:29:45.757Z">
+<meta property="og:updated_time" content="2020-03-23T04:05:53.136Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Meta-analysis Tutorial">
-<meta name="twitter:description" content="Meta-analysis 入门 meta 分析的学习分两部分：一部分是 meta 分析原理的学习，需要有本科阶段的统计学知识作为基础；另一部分是软件的学习，主流的有 stata 和 R 语言，工具各有利弊无需纠结。stata 是收费软件，但是很容易下载到破解版；R 语言是免费的，我用的IDE 是 RStudio，也是免费的。 meta 分析原理：《应用STATA做Meta分析(第2版)》，如果你">
+<meta name="twitter:title" content="Meta-analysis 入门">
+<meta name="twitter:description" content="meta 分析的学习分两部分：一部分是 meta 分析原理的学习，需要有本科阶段的统计学知识作为基础；另一部分是软件的学习，主流的有 stata 和 R 语言，工具各有利弊无需纠结。stata 是收费软件，但是很容易下载到破解版；R 语言是免费的，我用的IDE 是 RStudio，也是免费的。 meta 分析原理：《应用STATA做Meta分析(第2版)》，如果你选择 stata 的话用这本书就">
 
 <link rel="canonical" href="http://donganqi.cn/2018/09/28/meta-analysis-tutorial/">
 
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>Meta-analysis Tutorial | Dong Anqi</title>
+  <title>Meta-analysis 入门 | Dong Anqi</title>
   
 
 
@@ -115,7 +115,7 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -126,6 +126,11 @@
         <li class="menu-item menu-item-tags">
 
     <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
   </ul>
@@ -160,7 +165,7 @@
     <link itemprop="mainEntityOfPage" href="http://donganqi.cn/2018/09/28/meta-analysis-tutorial/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="Dong Anqi">
       <meta itemprop="description" content>
     </span>
@@ -170,7 +175,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Meta-analysis Tutorial
+          Meta-analysis 入门
         </h1>
 
         <div class="post-meta">
@@ -187,7 +192,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2018-09-30 19:29:45" itemprop="dateModified" datetime="2018-09-30T19:29:45+08:00">2018-09-30</time>
+                <time title="修改时间：2020-03-23 12:05:53" itemprop="dateModified" datetime="2020-03-23T12:05:53+08:00">2020-03-23</time>
               </span>
 
           
@@ -201,7 +206,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Meta-analysis-入门"><a href="#Meta-analysis-入门" class="headerlink" title="Meta-analysis 入门"></a>Meta-analysis 入门</h1><ol>
+        <ol>
 <li>meta 分析的学习分两部分：一部分是 meta 分析原理的学习，需要有本科阶段的统计学知识作为基础；另一部分是软件的学习，主流的有 stata 和 R 语言，工具各有利弊无需纠结。stata 是收费软件，但是很容易下载到破解版；R 语言是免费的，我用的IDE 是 RStudio，也是免费的。</li>
 <li>meta 分析原理：<a href="https://www.amazon.cn/dp/B072LMWGSV/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1538141802&amp;sr=1-1&amp;keywords=%E5%BA%94%E7%94%A8STATA%E5%81%9AMeta%E5%88%86%E6%9E%90+%E7%AC%AC2%E7%89%88" target="_blank" rel="noopener">《应用STATA做Meta分析(第2版)》</a>，如果你选择 stata 的话用这本书就够了，既阐明了原理也讲了很多 stata 软件使用方法。前几章讲原理一定要弄懂，后面的都是针对不同类型的数据资料选用不同 meta 分析，当作工具书来看就行，用到的时候再查阅。</li>
 <li>如果确定用 stata 的话上面一本就够了，如果用 R 语言的话还要买本书学一下基本的语法，以下三本任意一本都行：《R 语言经典实例》、《学习 R》和《R语言实战（第2版）》。我用的是<a href="https://book.douban.com/subject/26785199/" target="_blank" rel="noopener">《R 语言实战（第2版）》</a>。如果有编程基础（Python 和 R 很相似）的话学起来很快，一两个小时就能掌握。不用学得很深，学一些基本的如包的用法、数据结构、从 CSV 、 Excel 导入数据就能应付最基本的 meta 分析。</li>
@@ -290,19 +295,20 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Meta-analysis-入门"><span class="nav-number">1.</span> <span class="nav-text">Meta-analysis 入门</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Dong Anqi" src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">Dong Anqi</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
+          <a href="/archives/">
+        
           <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
